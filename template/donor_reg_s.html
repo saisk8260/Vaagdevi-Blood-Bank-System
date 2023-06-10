@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <style>
+        .text-white {
+            color: white;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="form_body">
+            <h1 class="text-center text-white">Welcome To Vaagdevi Blood Bank...</h1>
+            <br>
+            <h2 class="text-center text-white">Details about <span class="text-white">{{forms.name.data}}</span></h2>
+
+            <div class="donor_details m-5">
+                <p><strong class="text-white">Name:</strong> <span class="text-white">{{forms.name.data}}</span></p>
+                <p><strong class="text-white">Gender:</strong> <span class="text-white">{{forms.gender.data}}</span></p>
+                <p><strong class="text-white">Date Of Birth:</strong> <span class="text-white">{{forms.date_of_birth.data}}</span></p>
+                <p><strong class="text-white">Blood Group:</strong> <span class="text-uppercase text-white">{{forms.blood_group.data}}</span></p>
+                <p><strong class="text-white">Phone Number:</strong> <span class="text-white">{{forms.phone_number.data}}</span></p>
+                <p><strong class="text-white">Email:</strong> <span class="text-white">{{forms.email.data}}</span></p>
+                <p><strong class="text-white">Occupation:</strong> <span class="text-white">{{forms.occupation.data}}</span></p>
+                <p><strong class="text-white">Home Address:</strong> <span class="text-white">{{forms.home_address.data}}</span></p>
+                <p><strong class="text-white">Blood Donated Last Date:</strong> <span class="text-white">{{forms.last_donate_date.data}}</span></p>
+                <p><strong class="text-white">Any Diseases:</strong> <span class="text-white">{{forms.any_diseases.data}}</span></p>
+                <p><strong class="text-white">Allergies:</strong> <span class="text-white">{{forms.allergies.data}}</span></p>
+                <p><strong class="text-white">Cardiac:</strong> <span class="text-white">{{forms.cardiac.data}}</span></p>
+                <p><strong class="text-white">Bleeding Disorders:</strong> <span class="text-white">{{forms.bleeding_disorders.data}}</span></p>
+                <p><strong class="text-white">HBSAG HCV HIV:</strong> <span class="text-white">{{forms.hbsAg_hcv_hIV.data}}</span></p>
+            </div>
+
+            <h3 class="text-center text-white">{{forms.name.data}} Your Registration Is Successfull...</h3>
+
+        </div>
+    </div>
+{% endblock %}

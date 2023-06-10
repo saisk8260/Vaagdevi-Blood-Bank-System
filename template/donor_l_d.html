@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+        <div class="form_body">
+            <h1 class="text-center">Details about {{details.name}}</h1>
+
+            <div class= "donor_details m-5">
+                <p><strong style="color: white;">Name:</strong> <span style="color: white;"> {{details.name}}</span></p>
+                <p><strong style="color: white;">Gender:</strong> <span style="color: white;"> {{details.gender}}</span></p>
+                <p><strong style="color: white;">Date Of Birth:</strong> <span style="color: white;"> {{details.date_of_birth}}</span></p>
+                <p><strong style="color: white;">Blood Group:</strong> <span class="text-uppercase"  style="color: white;">{{details.blood_group}}</span></p>
+                <p><strong style="color: white;">Phone Number:</strong> <span style="color: white;">{{details.phone_number}}</span></p>
+                <p><strong style="color: white;">Email:</strong> <span style="color: white;"> {{details.email}}</span></p>
+                <p><strong style="color: white;">Occupation:</strong>  <span style="color: white;">{{details.occupation}}</span></p>
+                <p><strong style="color: white;">Home Address:</strong>  <span style="color: white;">{{details.home_address}}</span></p>
+                <p><strong style="color: white;">Blood Donated Last Date:</strong> <span style="color: white;">{{details.last_donate_date}}</span></p>
+                <p><strong style="color: white;">Any Diseases:</strong> <span style="color: white;"> {{details.any_diseases}}</span></p>
+                <p><strong style="color: white;">Allergies:</strong> <span style="color: white;"> {{details.allergies}}</span></p>
+                <p><strong style="color: white;">Cardiac:</strong> <span style="color: white;"> {{details.cardiac}}</span></p>
+                <p><strong style="color: white;">Bleeding Disorders:</strong> <span style="color: white;"> {{details.bleeding_disorders}}</span></p>
+                <p><strong style="color: white;">HBSAG HCV HIV:</strong> <span style="color: white;"> {{details.hbsAg_hcv_hIV}}</span></p>
+        </div>
+        </div>
+
+
+
+{% endblock  %}
+
